@@ -43,3 +43,8 @@ Focus Nest ist eine mobile Fokus-Timer-App mit gemütlicher Stimmung. Sie verbin
 
 ## Material- und Laufzeitgrenzen
 Es werden keine externen Bild- oder Audio-Downloads benötigt. Die Zimmerillustration ist deterministisch aus React-Native-Views gebaut; die Soundkanäle verwenden kleine lokale WAV-Loops. Die vorhandene Datenbank bleibt ungenutzt, weil der Blueprint die dauerhafte Speicherung als optional markiert hat und lokale Fortschrittsspeicherung für diesen persönlichen Timer ausreicht.
+
+## Erweiterung: Lo-Fi und filterbare Statistik
+- Der Spotify-ähnliche Wunsch wird ohne zusätzliche Kontoberechtigungen als lokaler Lo-Fi-Player umgesetzt. Ein kurzer, lizenzfreier WAV-Loop liegt unter `assets/audio/lofi.wav`; `expo-audio` übernimmt Loop, Play/Pause und Lautstärke.
+- Aufgaben erhalten eine Kategorie aus einer kleinen, verständlichen Auswahl. Jede abgeschlossene Fokusphase schreibt einen `FocusSession`-Datensatz mit lokalem Zeitstempel und Kategorie in AsyncStorage.
+- Die bestehende Wochenkarte bleibt erhalten und wird um eine Statistiksektion ergänzt: Umschalter zwischen Wochentagen und Kategorien sowie auswählbare Filterchips. Die Ansicht berechnet die gefilterten Werte lokal aus den Sitzungsdatensätzen.

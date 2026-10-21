@@ -38,3 +38,16 @@
 ## [x] Mobile Branding und Starter-Konfiguration
 - Die Focus-Nest-Launcher-Ikone ist quadratisch und ohne eingebrannte Rundung vorhanden.
 - Die native Expo-Konfiguration behält `appSlug`, Scheme sowie iOS-/Android-IDs des Starters bei.
+
+## [x] Lokaler Lo-Fi-Musikplayer
+- Die App bietet einen lokalen Lo-Fi-Musikplayer als Alternative zu einer Spotify-Integration.
+- Der Player kann gestartet und pausiert werden.
+- Die Lo-Fi-Musik wird als lokaler Loop ohne externes Konto oder Netzwerkzugriff abgespielt.
+- Der Wiedergabestatus bleibt mit der gemütlichen Soundtrack-Sektion visuell verständlich.
+
+## [x] Erweiterte Statistik mit Tages- und Kategorie-Filtern
+- Fokus-Sitzungen werden als lokale Datensätze mit Abschlusszeitpunkt und Aufgabenkategorie gespeichert.
+- Die Statistik kann nach Wochentagen gefiltert werden.
+- Die Statistik kann nach Aufgabenkategorien gefiltert werden.
+- Aufgaben können einer Kategorie zugeordnet werden; bestehende Aufgaben erhalten eine kompatible Standardkategorie.
+- Die Statistik zeigt die gefilterte Sitzungsanzahl und eine verständliche kompakte Verteilung.
