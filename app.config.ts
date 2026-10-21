@@ -30,9 +30,8 @@ const env = {
   // App branding - update these values directly (do not use env vars)
   appName: "Focus Nest",
   appSlug: "focusnest",
-  // S3 URL of the app logo - set this to the URL returned by generate_image when creating custom logo
-  // Leave empty to use the default icon from assets/images/icon.png
-  logoUrl: "",
+  // Durable project logo URL used by the Manus project metadata hook.
+  logoUrl: "https://files.manuscdn.com/user_upload_by_module/session_file/310519664029103224/xoddjxfZzpjdZLmr.png",
   scheme: schemeFromBundleId,
   iosBundleId: bundleId,
   androidPackage: bundleId,
